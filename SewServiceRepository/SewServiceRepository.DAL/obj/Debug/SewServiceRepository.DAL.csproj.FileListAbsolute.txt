@@ -1,0 +1,12 @@
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\SewServiceRepository.DAL.dll.config
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\SewServiceRepository.DAL.dll
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\SewServiceRepository.DAL.pdb
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\EntityFramework.dll
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\SewServiceRepository.DbEntity.dll
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\SewServiceRepository.DbEntity.pdb
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\EntityFramework.xml
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\obj\Debug\SewServiceRepository.DAL.csprojResolveAssemblyReference.cache
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\obj\Debug\SewServiceRepository.DAL.dll
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.DAL\obj\Debug\SewServiceRepository.DAL.pdb

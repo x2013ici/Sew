@@ -1,0 +1,4 @@
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.Common\bin\Debug\SewServiceRepository.Common.dll
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.Common\bin\Debug\SewServiceRepository.Common.pdb
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.Common\obj\Debug\SewServiceRepository.Common.dll
+E:\StFxWrkSpace\ServiceEnabledWorkflow\devel\WrkSpace\ServiceRepository\SewServiceRepository\SewServiceRepository.Common\obj\Debug\SewServiceRepository.Common.pdb

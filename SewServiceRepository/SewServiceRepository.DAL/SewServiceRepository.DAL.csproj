@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08591F19-1E49-4679-8CCB-2226008924F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SewServiceRepository.DAL</RootNamespace>
+    <AssemblyName>SewServiceRepository.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\EfRepository.cs" />
+    <Compile Include="Base\IDbContext.cs" />
+    <Compile Include="Base\IModelService.cs" />
+    <Compile Include="Base\IPersistentCollection.cs" />
+    <Compile Include="Base\IService.cs" />
+    <Compile Include="Base\ModelService.cs" />
+    <Compile Include="Base\PersistentCollection.cs" />
+    <Compile Include="Base\ServiceBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseModel\AddressResponse.cs" />
+    <Compile Include="ResponseModel\BaseResponse.cs" />
+    <Compile Include="ResponseModel\CountryResponse.cs" />
+    <Compile Include="ResponseModel\ProviderResponse.cs" />
+    <Compile Include="ResponseModel\ServiceDetailsResponse.cs" />
+    <Compile Include="ResponseModel\ServiceResponse.cs" />
+    <Compile Include="ResponseModel\UserLoginSessionResponse.cs" />
+    <Compile Include="ResponseModel\UserResponse.cs" />
+    <Compile Include="ResponseModel\UserTypeResponse.cs" />
+    <Compile Include="Services\AddressServices.cs" />
+    <Compile Include="Services\OwlsService.cs" />
+    <Compile Include="Services\ProviderService.cs" />
+    <Compile Include="Services\ServiceDetailService.cs" />
+    <Compile Include="Services\UserLoginSessionService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\UserTypeService.cs" />
+    <Compile Include="SewDBContext.cs" />
+    <Compile Include="SewDBInitializer.cs" />
+    <Compile Include="Utility\Common.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SewServiceRepository.DbEntity\SewServiceRepository.DbEntity.csproj">
+      <Project>{be13ab04-584f-4995-8707-71644c7b67f0}</Project>
+      <Name>SewServiceRepository.DbEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
+    <Folder Include="RequestModel\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
