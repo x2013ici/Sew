@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioButton
+        android:id="@+id/txtVwServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/txt_serach_result_name"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/llOutputHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVwServiceName"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+        
+        <!-- <TextView
+            android:id="@+id/txtVwOutputs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_search_result_outputs" /> -->
+
+        <!-- <TextView
+            android:id="@+id/txtVwOutputValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/txt_search_result_outputs_value" /> -->
+    </LinearLayout>
+    
+    <!-- <TextView
+        android:id="@+id/txtVwScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llOutputHolder"
+        android:layout_marginTop="3dp"
+        android:text="@string/txt_search_result_scores" /> -->
+    
+    <LinearLayout
+        android:id="@+id/iolabelHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llOutputHolder"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_inputoutscore" />
+
+        <TextView
+            android:id="@+id/txtVwInputOutputScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/qoslableholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iolabelHolder"
+        android:orientation="horizontal">
+        
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_qosscore" />
+
+        <TextView
+            android:id="@+id/txtVwQoSScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/totallabelHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qoslableholder"
+        android:orientation="horizontal">
+        
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_totalscore" />
+
+        <TextView
+            android:id="@+id/txtVwTotalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llInputHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totallabelHolder"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtVwInputs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_provider_name" />
+
+        <TextView
+            android:id="@+id/txtVwInputsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

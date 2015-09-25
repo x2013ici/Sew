@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.stfx.sew.ChooseQoSConceptActivity" >
+
+    <!-- <TextView
+        android:id="@+id/txtQoSBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:text="@string/txt_qos_input"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+    <LinearLayout
+        android:id="@+id/llInputHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/chkInput1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/txt_executionprice" />
+
+        <CheckBox
+            android:id="@+id/chkInput2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/txt_responsetime" />
+
+        <CheckBox
+            android:id="@+id/chkInput3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/txt_reliability" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llInputHolder"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/txtInp1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.97"
+            android:background="@color/priority_text_color_1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtInp2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:background="@color/priority_text_color_2"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtInp3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.88"
+            android:background="@color/priority_text_color_3"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.stfx.sew.AutoWorkflowExecutionActivity" >
+
+    <TextView
+        android:id="@+id/txtWorflowConfigureBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/txt_execute_workflow_banner"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!--
+    <ListView
+        android:id="@+id/lstWorkflowList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txtWorflowConfigureBanner"
+        tools:listitem="@android:layout/simple_list_item_single_choice" >
+    </ListView>
+    -->
+
+    <ExpandableListView
+        android:id="@+id/lstWorkflowList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtWorflowConfigureBanner"
+        android:layout_above="@+id/btnExecuteWorkflow"
+        android:layout_marginTop="20dp"
+        android:groupIndicator="@null"
+        tools:listitem="@android:layout/simple_expandable_list_item_1" >
+
+    </ExpandableListView>
+
+    <Button
+        android:id="@+id/btnExecuteWorkflow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lstWorkflowList"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lstWorkflowList"
+        android:ems="10"
+        android:onClick="executionWorkflow"
+        android:text="@string/btn_execute_workflow" />
+
+</RelativeLayout>

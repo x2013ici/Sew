@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stfx.sew"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <service android:name=".SewWebRequestIntentService" />
+        <service android:name=".SewServiceDiscoveryIntentService" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name=".ChooseInputConceptActivity"
+            android:label="@string/title_chooseinputconceptactivity" >
+        </activity>
+        -->
+
+        <activity
+            android:name=".InputConceptActivity"
+            android:label="@string/title_activity_input_concept" >
+        </activity>
+        <activity
+            android:name=".ChooseQoSConceptActivity"
+            android:label="@string/title_chooseqosconceptactivity"
+            android:parentActivityName=".InputConceptActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stfx.sew.QuestionSectionOneActivity" />
+        </activity>
+        <activity
+            android:name=".ChooseOutputConceptActivity"
+            android:label="@string/title_chooseoutputconceptactivity"
+            android:parentActivityName=".ChooseQoSConceptActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stfx.sew.QoSInputActivity" />
+        </activity>
+        <activity
+            android:name=".DiscoveryServicesActivity"
+            android:label="@string/title_discoveryservicesactivity"
+            android:parentActivityName=".ChooseOutputConceptActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stfx.sew.OutputSelectActivity" />
+        </activity>
+        <activity
+            android:name=".ChooseOptionActivity"
+            android:label="@string/title_chooseoptionactivity"
+            android:parentActivityName=".LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stfx.sew.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".WorkflowSelectActivity"
+            android:label="@string/title_workflowselectactivity"
+            android:parentActivityName=".ChooseOptionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stfx.sew.ChoiseActivity" />
+        </activity>
+        <activity
+            android:name=".AutoWorkflowExecutionActivity"
+            android:label="@string/title_activity_auto_workflow_execution"
+            android:parentActivityName=".WorkflowSelectActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stfx.sew.WorkflowSelectActivity" />
+        </activity>
+        <activity
+            android:name=".ConfigureWorkflowTasksActivity"
+            android:label="@string/title_configureworkflowtasksactivity"
+            android:parentActivityName=".WorkflowSelectActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stfx.sew.WorkflowSelectActivity" />
+        </activity>
+        <activity
+            android:name=".SelectedTasksActivity"
+            android:label="@string/title_selectedtasksactivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ConfigureWorkflowTasksActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stfx.sew.ConfigurWorkflowActivity" />
+        </activity>
+        <activity
+            android:name=".ParseWorkflowActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".BlockingQueueActivity"
+            android:label="@string/title_activity_blocking_queue" >
+        </activity>
+        <activity
+            android:name=".QoSInputActivity"
+            android:label="@string/title_activity_qo_sinput" >
+        </activity>
+        <activity
+            android:name=".TaskExecutionRuleActivity"
+            android:label="@string/title_activity_task_execution_rule" >
+        </activity>
+    </application>
+
+</manifest>

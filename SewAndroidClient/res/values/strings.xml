@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sew Consumer Agent</string>
+    <string name="label_LoginActivity">Login Screen</string>
+    <string name="hello_world">Parse Workflow Data Model</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_next">Next</string>
+    <string name="action_previous">Previous</string>
+    <string name="txt_login_banner">Welcome to Service Enabled Workflow Andoid Client</string>
+    <string name="txt_login_user_name">User Name:</string>
+    <string name="txt_login_user_password">User Password:</string>
+    <string name="txt_btn_login">Login</string>
+    <string name="txt_btn_sign_up">Sign Up</string>
+    <string name="txt_user_name">Hira</string>
+    <string name="hnt_user_name">User Name</string>
+    <string name="hnt_user_password">Password</string>
+    <string name="txt_user_password">surround</string>
+    <string name="title_activity_question_section_one">Core Input</string>
+    <string name="txt_core_input_banner">Choose Input Instances</string>
+    <string name="txt_chkInput1">Palliative Care</string>
+    <string name="txt_chkInput2">Appointment</string>
+    <string name="txt_chkInput3">Palliative</string>
+    <string name="txt_chkInput4">Physician</string>
+    <string name="txt_chkInput5">Consult</string>
+    <string name="txt_chkInput6">Availability</string>
+    <string name="txt_chkInput7">Patient List</string>
+    <string name="txt_chkInput8">CareDelivery</string>
+    <string name="txt_chkInput9">Location</string>
+    <string name="txt_chkInput10">Community</string>
+    <string name="txt_core_input_condition">Instance #1: </string>
+    <string name="txt_condition_one">Patient</string>
+    <string name="txt_condition_two">Appointment</string>
+    <string name="txt_condition_three">Palliative</string>
+    <string name="txt_core_input_symptom">Instance #2: </string>
+    <string name="txt_symptom_one">Physician</string>
+    <string name="txt_symptom_two">Consult</string>
+    <string name="txt_symptom_three">Availability</string>
+    <string name="txt_symptom_four">PatientList</string>
+    <string name="txt_symptom_five">CareDelivery</string>
+    <string name="txt_symptom_six">Location</string>
+    <string name="txt_symptom_seven">Community</string>
+    <string name="title_activity_qo_sinput">Choose QoS Input Instances</string>
+    <string name="txt_qos_input">Choose QoS Input Instances</string>
+    <string name="txt_responsetime">Response Time</string>
+    <string name="txt_executionprice">Execution Price</string>
+    <string name="txt_reliability">Reliability</string>
+    <string name="title_activity_output_select">Outputs Select</string>
+    <string name="txt_output_baanner">Select Output Instances</string>
+    <string name="txt_output_one">Appointment</string>
+    <string name="txt_output_two">CareGiver List</string>
+    <string name="txt_output_three">Patient List</string>
+    <string name="txt_output_four">Consult</string>
+    <string name="txt_output_five">CareDetails</string>
+    <string name="txt_output_six">PrescribeDrug</string>
+    <string name="txt_output_seven">Explanation</string>
+    <string name="txt_output_eight">Physician List</string>
+    <string name="txt_output_nine">Palliative Care</string>
+    <string name="txt_output_ten">physician</string>
+    
+    <string name="txt_execution_rule_select">Select</string>
+    <string name="txt_execution_rule_create">Create</string>
+    <string name="txt_execution_rule_update">Update</string>
+    <string name="txt_execution_rule_delete">Delete</string>
+    <!--
+    <string name="txt_output_nine">Output 9</string>
+    <string name="txt_output_ten">Output 10</string>
+    <string name="txt_output_eleven">Output 11</string>
+    <string name="txt_output_twelve">Output 12</string>
+    -->
+    <string name="txt_output_discover_services">Discover Semantic Web Services</string>
+    <string name="title_activity_search_reasult">Service Search Results</string>
+    <string name="txt_service_search_banner">Service Search Results: </string>
+    <string name="txt_no_result">No Result</string>
+    <string name="txt_serach_result_name">Service Name</string>
+    <string name="txt_provider_name">Service Provider: </string>
+    <string name="txt_search_result_inputs_value">Inputs Values</string>
+    <string name="txt_search_result_outputs">Outputs: </string>
+    <string name="txt_search_result_outputs_value">Outputs Values</string>
+    <string name="txt_search_result_scores">Scores: </string>
+    <string name="txt_search_result_input_output_score">Input/Output</string>
+    <string name="txt_search_result_input_output_score_value">10</string>
+    <string name="txt_search_result_qos_score">QoS</string>
+    <string name="txt_search_result_qos_score_value">123</string>
+    <string name="txt_search_result_total_score">Total</string>
+    <string name="txt_search_result_total_score_value">200</string>
+    <string name="action_done">Done</string>
+    <string name="action_logout">Log out</string>
+    <string name="btn_execute_service">Execute Service</string>
+    <string name="title_activity_choice">Choose Option</string>
+    <!-- <string name="btn_phase_one">Phase One</string> -->
+    <string name="btn_phase_one">Demo Drug Discovery and Execution Flow</string>
+    <!-- <string name="btn_phase_two">Phase Two</string> -->
+    <string name="btn_phase_two">Demo Hospice Palliative Care Workflow</string>
+    <string name="btn_configur_workflow_tasks">Configure Workflow Tasks</string>
+    <string name="btn_automatic_workflow_execution">Execute Workflow Automatically</string>
+    <string name="title_activity_workflow_select">Workflow Select</string>
+    <string name="btn_execute_workflow">Execute Selected Workflow</string>
+    <string name="toast_text_workflow_executed_successfully">Workflow Executed Successfully</string>
+    <string name="title_activity_configur_workflow">Select Workflow to Configure</string>
+    <string name="txt_configure_workflow_banner">Select a workflow to parse available Tasks: </string>
+    <string name="txt_execute_workflow_banner">Select a workflow to Execute: </string>
+    <string name="txt_input_concept_banner">Please select one or more input instances</string>
+    <string name="txt_output_concept_banner">Please select one or more output instances</string>
+    <string name="txt_task_rule_banner">Please select one or more output instances</string>
+    <string name="btn_configure_tasks">Configure Selected Tasks</string>
+    <string name="txt_empty_task">Please select a worklfow from above list</string>
+    <string name="title_activity_selected_tasks">Selected And Configured Tasks</string>
+    <string name="txt_selected_configure_tasks_banner">Selected and Configured Tasks</string>
+    <string name="txt_configured_tasks_list">Configured Tasks:</string>
+    <string name="txt_need_to_configur_tasks_list">Tasks to be Configured: </string>
+    <string name="txt_configured_list_empty">No task has been configured yet</string>
+    <string name="txt_configure_left_empty">No task left to be configured</string>
+    <string name="txt_configure_selecte_task">Configure Selected Task</string>
+    <string name="btn_calcle">Cancel</string>
+    <string name="btn_save">Save</string>
+    <string name="title_activity_parse_workflow">Parse Workflow Data Model</string>
+    <string name="btnAsynchronousCall">Asynchronous Call</string>
+    <string name="btnParseXML">Parse Worflow</string>
+    <string name="tvExecutionStatus">Execution Status</string>
+    <string name="btnChoice">Choice Screen</string>
+    <string name="txtqoshints">Select all these concepts. Sequence of order will be preserved</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="txt_inputoutscore">Input/Output Matching Score:</string>
+    <string name="txt_qosscore">QoS Matching Score:</string>
+    <string name="txt_totalscore">Total Matching Score:</string>
+    <string name="title_chooseinputconceptactivity">Select Input Instances</string>
+    <string name="title_chooseqosconceptactivity">Select all QoS Input Instancess</string>
+    <string name="title_chooseoutputconceptactivity">Select Output Instances</string>
+    <string name="title_discoveryservicesactivity">Discover and Execute Semantic Web Services</string>
+    <string name="title_chooseoptionactivity">Choose SEW Demo Flow</string>
+    <string name="title_workflowselectactivity">Choose Workflow Demo Flow</string>
+    <string name="title_autoWorkflowexecutionactivity">Select a workflow to Execute Automatically</string>
+    <string name="title_configureworkflowtasksactivity">Configure Workflow Tasks</string>
+    <string name="title_selectedtasksactivity">Selected and Configured Tasks</string>
+    <string name="title_parseworkflowactivity">Parse Workflow</string>
+    <string name="title_activity_auto_workflow_execution">Execute Workflow Automatically</string>
+    <string name="txt_choose_demo_workflow">At first configure workflow tasks. Then execute selected workflow automatically</string>
+    <string name="title_activity_blocking_queue">BlockingQueueActivity</string>
+    <string name="title_activity_input_concept">Select Input Instances</string>
+    <string name="spinner_title">Select Value</string>
+    <string name="executionprice_prompt">Choose Execution Price</string>
+
+    <string-array name="executionprice_arrays">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+        <item>Fail</item>
+    </string-array>
+
+    <string name="responsetime_prompt">Choose Response Time</string>
+
+    <string-array name="responsetime_arrays">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+        <item>Fail</item>
+    </string-array>
+
+    <string name="reliability_prompt">Choose Reliability</string>
+
+    <string-array name="reliability_arrays">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+        <item>Fail</item>
+    </string-array>
+
+    <string name="title_activity_task_execution_rule">Select Task Execution Rules</string>
+
+</resources>

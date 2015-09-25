@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.stfx.sew.SelectedTasksActivity" >
+
+    <!-- <TextView
+        android:id="@+id/txtSelectedTasksBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_selected_configure_tasks_banner"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+    <TextView
+        android:id="@+id/txtConfiguredTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/txt_configured_tasks_list"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/llConfigureedListHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtConfiguredTasks" >
+
+        <TextView
+            android:id="@+id/txtConfigureListEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/txt_configured_list_empty"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lstConfiguredTasksList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:listitem="@android:layout/simple_list_item_1" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTobeConfigurTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llConfigureedListHolder"
+        android:layout_margin="10dp"
+        android:text="@string/txt_need_to_configur_tasks_list"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/llTobeConfigureListHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnConfigureTask"
+        android:layout_below="@id/txtTobeConfigurTasks" >
+
+        <TextView
+            android:id="@+id/txtTobeConfiguredEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/txt_configure_left_empty"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lstTobeConfigurTasksList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:listitem="@android:layout/simple_list_item_1" >
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfigureTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="configureTasks"
+        android:text="@string/txt_configure_selecte_task" />
+
+</RelativeLayout>
